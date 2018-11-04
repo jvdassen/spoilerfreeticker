@@ -1,5 +1,5 @@
 # Spoilerfree NFL results
->> This script will fetch game stats and sum up the scores
+> This script will fetch game stats and sum up the scores
 
 ## Installation
 ```
