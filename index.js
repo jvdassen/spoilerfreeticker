@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var Retrieval = require('./Retrieval');
 var retriever = new Retrieval();
 
@@ -5,5 +6,5 @@ var retriever = new Retrieval();
   var results = await retriever.getResults();
   var json = await results.json();
 
-  console.log(retriever.parseResults(json))
+  console.log(retriever.parseResults(json).map(result => result.formatted))
 })();
